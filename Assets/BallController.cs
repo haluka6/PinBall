@@ -33,12 +33,12 @@ public class BallController : MonoBehaviour
         //ボールが画面外に出た場合
         if (this.transform.position.z < this.visiblePosZ)
         {
-        //GameoverTextにゲームオーバを表示
-        this.gameoverText.GetComponent<Text> ().text = "Game Over GG";
+            //GameoverTextにゲームオーバを表示
+            this.gameoverText.GetComponent<Text> ().text = "Game Over GG";
+        }
 
         //ScoreTextにスコアを表示
         this.scoreText.GetComponent<Text> ().text = $"score: {score}";
-        }
     }
 
     void OnCollisionEnter(Collision other)
